@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    --primaryColor:#FFCC00;
+    --secondaryColor:#353535;
+}
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    font-family: var(--font-family);
+}
+.btn{
+    padding: 16px 45px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    border: none;
+    border-radius: 20px;
+}
+.btn.btn-primary{
+    background-color: var(--primaryColor);
+    color: white;
+}
+/* .btn.btn-sm{
+font-weight: 500;
+font-size: 16px;
+line-height: 180%;
+padding: 10px 20px;
+border-radius: 12px;
+} */
+/* common css end*/
+/* navbar start */
+nav #menu ul li a{
+font-weight: 500;
+font-size: 15px;
+line-height: 200%;
+color: #353535;
+text-transform: uppercase;
+padding: 18px 22px 0 22px;
+}
+nav #menu ul li a:hover,nav #menu ul li a:active{
+    border-bottom: solid 2px black;
+}
+header{
+    margin-bottom: 60px;
+}
+/* navbar ends */
+/* banner part start */
+main #banner .row{
+    justify-content: center;
+    align-items: center;
+}
+#banner h4{
+font-weight: 400;
+font-size: 24px;
+color: #353535;
+padding-bottom: 4px;
+}
+#banner h1{
+font-family: var(--second-family);
+font-weight: 700;
+font-size: 64px;
+color: #353535;
+padding-bottom: 36px;
+}
+#banner p{
+font-weight: 400;
+font-size: 20px;
+line-height: 180%;
+color: #353535;
+padding-bottom: 43px;
+}
+
+/* banner part end */
+
+/* media */
+@media (min-width: 992px)  {
+    nav.navbar.shadow{
+        box-shadow: none !important;
+    }
+}
+/* banner responsive */
+
+@media (max-width: 990px){
+    header{
+        margin-bottom: 20px!important;
+    }
+    #banner h4 {
+        font-weight: 200;
+        font-size: 20px;
+        color: #353535;
+    } 
+    #banner h1 {
+        font-weight: 600;
+        font-size: 40px;
+        color: #353535;
+        padding-bottom: 25px;
+    }
+    #banner p {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 180%;
+        color: #353535;
+        padding-bottom: 10px;
+    }
+    .btn {
+        padding: 10px 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 180%;
+        border: none;
+        border-radius: 20px;
+    }
+}
+/* media */

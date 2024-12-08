@@ -1,0 +1,17 @@
+@media (min-width: 992px)  {
+    nav.navbar.shadow{
+        box-shadow: none !important;
+    }
+}
+/* banner responsive */
+
+@media (max-width: 990px){
+    header{
+        margin-bottom: 20px!important;
+    }
+    #banner h4 {
+        font-weight: 200;
+        font-size: 20px;
+        color: #353535;
+    } 
+}
